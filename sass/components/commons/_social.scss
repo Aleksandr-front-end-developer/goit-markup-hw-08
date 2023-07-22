@@ -1,0 +1,29 @@
+/* social */
+.social {
+	display: flex;
+	column-gap: 10px;
+}
+
+.social__item {
+	line-height: 0;
+}
+
+.social__link {
+	display: inline-flex;
+	width: 44px;
+	height: 44px;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.10);
+	transition: background-color var(--transition-duration) var(--transition-function);
+
+	&:hover,
+	&:focus {
+		background-color: var(--color-accent);
+	}
+}
+
+.social__svg {
+	fill: #fff;
+}

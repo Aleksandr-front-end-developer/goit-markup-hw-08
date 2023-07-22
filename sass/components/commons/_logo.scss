@@ -1,0 +1,16 @@
+/* logo */
+.logo {
+	display: inline-block;
+	font-family: $fontRaleway;
+	text-decoration: none;
+	font-size: 26px;
+	line-height: var(--normal-line-height);
+	font-weight: 700;
+	letter-spacing: 0.78px;
+
+	color: var(--color-title);
+}
+
+.logo__accent {
+	color: var(--color-accent);
+}

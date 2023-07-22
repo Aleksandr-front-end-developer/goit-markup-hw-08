@@ -1,0 +1,31 @@
+// features
+
+.features__list {
+	display: flex;
+	column-gap: 30px;
+}
+
+.features__item {
+	flex-basis: 25%;
+}
+
+.features__image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 120px;
+	margin-bottom: 30px;
+	border-radius: 4px;
+	overflow: hidden;
+	background-color: var(--color-background);
+}
+
+.features__subtitle {
+	font-size: inherit;
+	line-height: var(--normal-line-height);
+	color: var(--color-title);
+	font-weight: 700;
+	text-transform: uppercase;
+
+	margin-bottom: 10px;
+}

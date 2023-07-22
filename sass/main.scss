@@ -1,0 +1,22 @@
+@import "./base/_reset";
+@import "./utils/_variables";
+
+// components commons
+@import "./components/commons/_general";
+@import "./components/commons/_logo";
+@import "./components/commons/_input";
+@import "./components/commons/_buttons";
+@import "./components/commons/_social";
+
+// components
+@import "./components/_header";
+@import "./components/_footer";
+@import "./components/_popup";
+
+// sections
+@import "./sections/_hero";
+@import "./sections/_features";
+@import "./sections/_activity";
+@import "./sections/_team";
+@import "./sections/_clients";
+@import "./sections/_portfolio";
