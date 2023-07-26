@@ -1,0 +1,139 @@
+.menu-toggle {
+	height: 40px;
+	width: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	background-color: transparent;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	margin: 10px 0 10px auto;
+
+	@media (min-width: 768px) {
+		display: none;
+	}
+}
+
+.menu-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 999;
+	padding: 48px 40px;
+	display: flex;
+	flex-direction: column;
+	background: #fff;
+	transform: translateX(100%);
+	transition: transform var(--transition-duration) var(--transition-function);
+
+}
+
+.menu-container.is-open {
+	transform: translateX(0);
+}
+
+.js-close-menu {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	width: 40px;
+	height: 40px;
+	margin: 0;
+	color: var(--color-title);
+	transition: color var(--transition-duration) var(--transition-function);
+
+	svg {
+		fill: currentColor;
+	}
+
+	&:hover,
+	&:focus {
+		color: var(--color-accent);
+	}
+}
+
+
+.mobile-nav {
+	flex-grow: 1;
+}
+
+.mobile-nav__list {}
+
+.mobile-nav__item {
+	&:not(:last-child) {
+		margin-bottom: 32px;
+	}
+}
+
+.mobile-nav__link {
+	color: var(--color-title);
+	font-size: 40px;
+	font-weight: 500;
+	line-height: var(--normal-line-height);
+	letter-spacing: 0.8px;
+	text-decoration: none;
+	transition: color var(--transition-duration) var(--transition-function);
+
+	&:hover,
+	&:focus {
+		color: var(--color-accent);
+	}
+}
+
+.mobile-nav__link--current {}
+
+
+.auth-mobile {}
+
+.auth-mobile__item {}
+
+
+
+.auth-mobile__link {
+	color: var(--color-primary);
+	font-size: 24px;
+	font-weight: 500;
+	line-height: var(--normal-line-height);
+	letter-spacing: 0.48px;
+	text-decoration: none;
+	transition: color var(--transition-duration) var(--transition-function);
+
+	&:hover,
+	&:focus {
+		color: var(--color-accent);
+	}
+}
+
+.auth-mobile__item--phone {
+
+	.auth-mobile__link {
+		letter-spacing: 0.68px;
+		font-size: 34px;
+		color: var(--color-accent);
+	}
+
+	margin-bottom: 32px;
+}
+
+.social-mobile {
+	margin-top: 64px;
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.social-mobile__item {}
+
+.social-mobile__link {
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 122.222%;
+	letter-spacing: 0.36px;
+	text-decoration: none;
+	color: var(--color-accent);
+}

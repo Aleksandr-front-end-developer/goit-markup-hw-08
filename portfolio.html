@@ -18,6 +18,11 @@
 	<header class="page-header">
 		<div class="page-header__container">
 			<a href="./" class="page-header__logo logo"><span class="logo__accent">Web</span>Studio</a>
+			<button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+				<svg class="svg menu-toggle__svg" width="40" height="40">
+					<use xlink:href="./images/icons.svg#burger-on"></use>
+				</svg>
+			</button>
 			<nav class="site-nav">
 				<ul class="site-nav__list">
 					<li class="site-nav__item">
@@ -40,7 +45,6 @@
 						info@devstudio.com</a>
 				</li>
 				<li class="auth-nav__item">
-
 					<a class="auth-nav__link" href="tel:+380961111111">
 						<svg class="svg auth-nav__svg" width="10" height="16">
 							<use xlink:href="./images/icons.svg#header-phone"></use>
@@ -48,6 +52,7 @@
 						+38 096 111 11 11</a>
 				</li>
 			</ul>
+
 		</div>
 	</header>
 
@@ -77,8 +82,17 @@
 				<ul class="portfolio__list grid">
 					<li class="grid__item">
 						<a href="" class="grid__link">
-							<div class="grid__block"> <img class="grid__img" src="./images/portfolio-1.jpg" alt="Відкритий ноутбук"
-									width="370" />
+							<div class="grid__block">
+								<picture>
+									<source media="(max-width: 767px)"
+										srcset="./images/portfolio-1_mobi.jpg 1x, ./images/portfolio-1_mobix2.jpg 2x" type="image/jpeg"
+										width="450">
+									<source media="(max-width: 1200px)"
+										srcset="./images/portfolio-1_tablet.jpg 1x, ./images/portfolio-1_tabletx2.jpg 2x" type="image/jpeg"
+										width="354">
+									<img class="grid__img" srcset="./images/portfolio-1.jpg 1x, ./images/portfolio-1x2.jpg 2x"
+										src="./images/portfolio-1.jpg" alt="Відкритий ноутбук" width="370" />
+								</picture>
 								<p class="grid__text-additional">Ресурс пропонує комплексні пропозиції з різним рівнем
 									функціоналу та
 									сервісів. Все
@@ -92,8 +106,17 @@
 					</li>
 					<li class="grid__item">
 						<a href="" class="grid__link">
-							<div class="grid__block"> <img class="grid__img" src="./images/portfolio-2.jpg" alt="Грають баскетбол"
-									width="370" />
+							<div class="grid__block">
+								<picture>
+									<source media="(max-width: 767px)"
+										srcset="./images/portfolio-2_mobi.jpg 1x, ./images/portfolio-2_mobix2.jpg 2x" type="image/jpeg"
+										width="450">
+									<source media="(max-width: 1200px)"
+										srcset="./images/portfolio-2_tablet.jpg 1x, ./images/portfolio-2_tabletx2.jpg 2x" type="image/jpeg"
+										width="354">
+									<img class="grid__img" srcset="./images/portfolio-2.jpg 1x, ./images/portfolio-2x2.jpg 2x"
+										src="./images/portfolio-2.jpg" alt="Грають баскетбол" width="370" />
+								</picture>
 								<p class="grid__text-additional">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
 									сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
 							</div>
@@ -105,8 +128,17 @@
 					</li>
 					<li class="grid__item">
 						<a href="" class="grid__link">
-							<div class="grid__block"> <img class="grid__img" src="./images/portfolio-3.jpg"
-									alt="Логотип з текстом і рибою" width="370" />
+							<div class="grid__block">
+								<picture>
+									<source media="(max-width: 767px)"
+										srcset="./images/portfolio-3_mobi.jpg 1x, ./images/portfolio-3_mobix2.jpg 2x" type="image/jpeg"
+										width="450">
+									<source media="(max-width: 1200px)"
+										srcset="./images/portfolio-3_tablet.jpg 1x, ./images/portfolio-3_tabletx2.jpg 2x" type="image/jpeg"
+										width="354">
+									<img class="grid__img" srcset="./images/portfolio-3.jpg 1x, ./images/portfolio-3x2.jpg 2x"
+										src="./images/portfolio-3.jpg" alt="Логотип з текстом і рибою" width="370" />
+								</picture>
 								<p class="grid__text-additional">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
 									сервісів. Все
 									це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -119,8 +151,17 @@
 					</li>
 					<li class="grid__item">
 						<a href="" class="grid__link">
-							<div class="grid__block"> <img class="grid__img" src="./images/portfolio-4.jpg" alt="Навушники"
-									width="370" />
+							<div class="grid__block">
+								<picture>
+									<source media="(max-width: 767px)"
+										srcset="./images/portfolio-4_mobi.jpg 1x, ./images/portfolio-4_mobix2.jpg 2x" type="image/jpeg"
+										width="450">
+									<source media="(max-width: 1200px)"
+										srcset="./images/portfolio-4_tablet.jpg 1x, ./images/portfolio-4_tabletx2.jpg 2x" type="image/jpeg"
+										width="354">
+									<img class="grid__img" srcset="./images/portfolio-4.jpg 1x, ./images/portfolio-4x2.jpg 2x"
+										src="./images/portfolio-4.jpg" alt="Навушники" width="370" />
+								</picture>
 								<p class="grid__text-additional">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
 									сервісів. Все
 									це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -133,8 +174,17 @@
 					</li>
 					<li class="grid__item">
 						<a href="" class="grid__link">
-							<div class="grid__block"> <img class="grid__img" src="./images/portfolio-5.jpg" alt="Коробки"
-									width="370" />
+							<div class="grid__block">
+								<picture>
+									<source media="(max-width: 767px)"
+										srcset="./images/portfolio-5_mobi.jpg 1x, ./images/portfolio-5_mobix2.jpg 2x" type="image/jpeg"
+										width="450">
+									<source media="(max-width: 1200px)"
+										srcset="./images/portfolio-5_tablet.jpg 1x, ./images/portfolio-5_tabletx2.jpg 2x" type="image/jpeg"
+										width="354">
+									<img class="grid__img" srcset="./images/portfolio-5.jpg 1x, ./images/portfolio-5x2.jpg 2x"
+										src="./images/portfolio-5.jpg" alt="Коробки" width="370" />
+								</picture>
 								<p class="grid__text-additional">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
 									сервісів. Все
 									це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -147,8 +197,17 @@
 					</li>
 					<li class="grid__item">
 						<a href="" class="grid__link">
-							<div class="grid__block"> <img class="grid__img" src="./images/portfolio-6.jpg" alt="Монітор"
-									width="370" />
+							<div class="grid__block">
+								<picture>
+									<source media="(max-width: 767px)"
+										srcset="./images/portfolio-6_mobi.jpg 1x, ./images/portfolio-6_mobix2.jpg 2x" type="image/jpeg"
+										width="450">
+									<source media="(max-width: 1200px)"
+										srcset="./images/portfolio-6_tablet.jpg 1x, ./images/portfolio-6_tabletx2.jpg 2x" type="image/jpeg"
+										width="354">
+									<img class="grid__img" srcset="./images/portfolio-6.jpg 1x, ./images/portfolio-6x2.jpg 2x"
+										src="./images/portfolio-6.jpg" alt="Монітор" width="370" />
+								</picture>
 								<p class="grid__text-additional">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
 									сервісів. Все
 									це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -161,8 +220,17 @@
 					</li>
 					<li class="grid__item">
 						<a href="" class="grid__link">
-							<div class="grid__block"> <img class="grid__img" src="./images/portfolio-7.jpg" alt="Відкрита книга"
-									width="370" />
+							<div class="grid__block">
+								<picture>
+									<source media="(max-width: 767px)"
+										srcset="./images/portfolio-7_mobi.jpg 1x, ./images/portfolio-7_mobix2.jpg 2x" type="image/jpeg"
+										width="450">
+									<source media="(max-width: 1200px)"
+										srcset="./images/portfolio-7_tablet.jpg 1x, ./images/portfolio-7_tabletx2.jpg 2x" type="image/jpeg"
+										width="354">
+									<img class="grid__img" srcset="./images/portfolio-7.jpg 1x, ./images/portfolio-7x2.jpg 2x"
+										src="./images/portfolio-7.jpg" alt="Відкрита книга" width="370" />
+								</picture>
 								<p class="grid__text-additional">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
 									сервісів. Все
 									це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -175,8 +243,17 @@
 					</li>
 					<li class="grid__item">
 						<a href="" class="grid__link">
-							<div class="grid__block"> <img class="grid__img" src="./images/portfolio-8.jpg" alt="Лейбл з написом"
-									width="370" />
+							<div class="grid__block">
+								<picture>
+									<source media="(max-width: 767px)"
+										srcset="./images/portfolio-8_mobi.jpg 1x, ./images/portfolio-8_mobix2.jpg 2x" type="image/jpeg"
+										width="450">
+									<source media="(max-width: 1200px)"
+										srcset="./images/portfolio-8_tablet.jpg 1x, ./images/portfolio-8_tabletx2.jpg 2x" type="image/jpeg"
+										width="354">
+									<img class="grid__img" srcset="./images/portfolio-8.jpg 1x, ./images/portfolio-8x2.jpg 2x"
+										src="./images/portfolio-8.jpg" alt="Лейбл з написом" width="370" />
+								</picture>
 								<p class="grid__text-additional">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
 									сервісів. Все
 									це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -189,8 +266,17 @@
 					</li>
 					<li class="grid__item">
 						<a href="" class="grid__link">
-							<div class="grid__block"> <img class="grid__img" src="./images/portfolio-9.jpg" alt="Друкують на ноутбуці"
-									width="370" />
+							<div class="grid__block">
+								<picture>
+									<source media="(max-width: 767px)"
+										srcset="./images/portfolio-9_mobi.jpg 1x, ./images/portfolio-9_mobix2.jpg 2x" type="image/jpeg"
+										width="450">
+									<source media="(max-width: 1200px)"
+										srcset="./images/portfolio-9_tablet.jpg 1x, ./images/portfolio-9_tabletx2.jpg 2x" type="image/jpeg"
+										width="354">
+									<img class="grid__img" srcset="./images/portfolio-9.jpg 1x, ./images/portfolio-9x2.jpg 2x"
+										src="./images/portfolio-9.jpg" alt="Друкують на ноутбуці" width="370" />
+								</picture>
 								<p class="grid__text-additional">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
 									сервісів. Все
 									це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -205,7 +291,51 @@
 			</div>
 		</section>
 	</main>
+	<div class="menu-container js-menu-container">
+		<button class="menu-toggle js-close-menu">
+			<svg class="svg menu-toggle__svg" width="40" height="40">
+				<use xlink:href="./images/icons.svg#burger-off"></use>
+			</svg>
+		</button>
+		<nav class="mobile-nav">
+			<ul class="mobile-nav__list">
+				<li class="mobile-nav__item">
+					<a class="mobile-nav__link mobile-nav__link--current" href="./"> Студія</a>
+				</li>
+				<li class="mobile-nav__item">
+					<a class="mobile-nav__link" href="./portfolio.html"> Портфоліо</a>
+				</li>
+				<li class="mobile-nav__item">
+					<a class="mobile-nav__link" href=""> Контакти</a>
+				</li>
+			</ul>
+		</nav>
+		<ul class="auth-mobile">
+			<li class="auth-mobile__item auth-mobile__item--phone">
+				<a class="auth-mobile__link" href="tel:+380961111111">
 
+					+38 096 111 11 11</a>
+			</li>
+			<li class="auth-mobile__item ">
+				<a class="auth-mobile__link" href="mailto:info@devstudio.com">
+					info@devstudio.com</a>
+			</li>
+		</ul>
+		<ul class="social-mobile">
+			<li class="social-mobile__item">
+				<a href="#" target="_blank" class="social-mobile__link">Instagram</a>
+			</li>
+			<li class="social-mobile__item">
+				<a href="#" target="_blank" class="social-mobile__link">Twitter</a>
+			</li>
+			<li class="social-mobile__item">
+				<a href="#" target="_blank" class="social-mobile__link">Facebook</a>
+			</li>
+			<li class="social-mobile__item">
+				<a href="#" target="_blank" class="social-mobile__link">LinkedIn</a>
+			</li>
+		</ul>
+	</div>
 	<!-- footer -->
 	<footer class="footer">
 		<div class="footer__container">
@@ -263,6 +393,7 @@
 			</div>
 		</div>
 	</footer>
+	<script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

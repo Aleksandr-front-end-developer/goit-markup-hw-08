@@ -17,6 +17,11 @@
 	<header class="page-header">
 		<div class="page-header__container">
 			<a href="./" class="page-header__logo logo"><span class="logo__accent">Web</span>Studio</a>
+			<button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+				<svg class="svg menu-toggle__svg" width="40" height="40">
+					<use xlink:href="./images/icons.svg#burger-on"></use>
+				</svg>
+			</button>
 			<nav class="site-nav">
 				<ul class="site-nav__list">
 					<li class="site-nav__item">
@@ -46,6 +51,7 @@
 						+38 096 111 11 11</a>
 				</li>
 			</ul>
+
 		</div>
 	</header>
 	<main class="main">
@@ -118,16 +124,18 @@
 				<h2 class="activity__title section__title">Чим ми займаємося</h2>
 				<ul class="activity__list">
 					<li class="activity__item">
-						<img class="activity__img" src="images/we-do_1.jpg" alt="Людина друкує на клавітаурі" width="370" />
+						<img class="activity__img" srcset="./images/we-do_1.jpg 1x, ./images/we-do_1x2.jpg 2x"
+							src="./images/we-do_1.jpg" alt="Людина дивиться на планшет" width="370" />
 						<h3 class="activity__name"><span class="activity__name-text">Десктопні додатки</span></h3>
 					</li>
 					<li class="activity__item">
-						<img class="activity__img" src="images/we-do_2.jpg" alt="Людина дивиться в телефон біля ноутбуку"
-							width="370" />
+						<img class="activity__img" srcset="./images/we-do_2.jpg 1x, ./images/we-do_2x2.jpg 2x"
+							src="./images/we-do_2.jpg" alt="Людина дивиться в телефон біля ноутбуку" width="370" />
 						<h3 class="activity__name"><span class="activity__name-text">Мобільні додатки</span></h3>
 					</li>
 					<li class="activity__item">
-						<img class="activity__img" src="images/we-do_3.jpg" alt="Людина дивиться на планшет" width="370" />
+						<img class="activity__img" srcset="./images/we-do_3.jpg 1x, ./images/we-do_3x2.jpg 2x"
+							src="./images/we-do_3.jpg" alt="Людина дивиться на планшет" width="370" />
 						<h3 class="activity__name"><span class="activity__name-text">Дизайнерські рішення</span></h3>
 					</li>
 				</ul>
@@ -139,7 +147,16 @@
 				<h2 class="team__title section__title">Наша команда</h2>
 				<ul class="team__list">
 					<li class="team__item">
-						<img class="team__img" src="images/our-team_1.jpg" alt="Хлопець посміхається" width="270" />
+						<picture>
+							<source media="(max-width: 767px)"
+								srcset="./images/our-team_1_mobi.jpg 1x, ./images/our-team_1_mobix2.jpg 2x" type="image/jpeg"
+								width="450">
+							<source media="(max-width: 1200px)"
+								srcset="./images/our-team_1_tablet.jpg 1x, ./images/our-team_1_tabletx2.jpg 2x" type="image/jpeg"
+								width="354">
+							<img class="team__img" srcset="./images/our-team_1.jpg 1x, ./images/our-team_1x2.jpg 2x"
+								src="./images/our-team_1.jpg" alt="Хлопець посміхається" width="270" />
+						</picture>
 						<div class="team__content">
 							<h3 class="team__name">Ігор Дем'яненко</h3>
 							<p class="team__position">Product Designer</p>
@@ -177,7 +194,16 @@
 
 					</li>
 					<li class="team__item">
-						<img class="team__img" src="images/our-team_2.jpg" alt="Дівчина посміхається" width="270" />
+						<picture>
+							<source media="(max-width: 767px)"
+								srcset="./images/our-team_2_mobi.jpg 1x, ./images/our-team_2_mobix2.jpg 2x" type="image/jpeg"
+								width="450">
+							<source media="(max-width: 1200px)"
+								srcset="./images/our-team_2_tablet.jpg 1x, ./images/our-team_2_tabletx2.jpg 2x" type="image/jpeg"
+								width="354">
+							<img class="team__img" srcset="./images/our-team_2.jpg 1x, ./images/our-team_2x2.jpg 2x"
+								src="./images/our-team_2.jpg" alt="Дівчина посміхається" width="270" />
+						</picture>
 						<div class="team__content">
 							<h3 class="team__name">Ольга Рєпіна</h3>
 							<p class="team__position">Frontend Developer</p>
@@ -214,8 +240,16 @@
 						</div>
 					</li>
 					<li class="team__item">
-						<img class="team__img" src="images/our-team_3.jpg" alt="Хлопець посміхається і дивиться в сторону"
-							width="270" />
+						<picture>
+							<source media="(max-width: 767px)"
+								srcset="./images/our-team_3_mobi.jpg 1x, ./images/our-team_3_mobix2.jpg 2x" type="image/jpeg"
+								width="450">
+							<source media="(max-width: 1200px)"
+								srcset="./images/our-team_3_tablet.jpg 1x, ./images/our-team_3_tabletx2.jpg 2x" type="image/jpeg"
+								width="354">
+							<img class="team__img" srcset="./images/our-team_3.jpg 1x, ./images/our-team_3x2.jpg 2x"
+								src="./images/our-team_3.jpg" alt="Хлопець посміхається і дивиться в сторону" width="270" />
+						</picture>
 						<div class="team__content">
 							<h3 class="team__name">Микола Тарасов</h3>
 							<p class="team__position">Marketing</p>
@@ -252,8 +286,16 @@
 						</div>
 					</li>
 					<li class="team__item">
-						<img class="team__img" src="images/our-team_4.jpg" alt="Хлопець мімікою робить вигляд розумного"
-							width="270" />
+						<picture>
+							<source media="(max-width: 767px)"
+								srcset="./images/our-team_4_mobi.jpg 1x, ./images/our-team_4_mobix2.jpg 2x" type="image/jpeg"
+								width="450">
+							<source media="(max-width: 1200px)"
+								srcset="./images/our-team_4_tablet.jpg 1x, ./images/our-team_4_tabletx2.jpg 2x" type="image/jpeg"
+								width="354">
+							<img class="team__img" srcset="./images/our-team_4.jpg 1x, ./images/our-team_4x2.jpg 2x"
+								src="./images/our-team_4.jpg" alt="Хлопець мімікою робить вигляд розумного" width="270" />
+						</picture>
 						<div class="team__content">
 							<h3 class="team__name">Михайло Єрмаков</h3>
 							<p class="team__position">UI Designer</p>
@@ -343,6 +385,51 @@
 			</div>
 		</section>
 	</main>
+	<div class="menu-container js-menu-container">
+		<button class="menu-toggle js-close-menu">
+			<svg class="svg menu-toggle__svg" width="40" height="40">
+				<use xlink:href="./images/icons.svg#burger-off"></use>
+			</svg>
+		</button>
+		<nav class="mobile-nav">
+			<ul class="mobile-nav__list">
+				<li class="mobile-nav__item">
+					<a class="mobile-nav__link mobile-nav__link--current" href="./"> Студія</a>
+				</li>
+				<li class="mobile-nav__item">
+					<a class="mobile-nav__link" href="./portfolio.html"> Портфоліо</a>
+				</li>
+				<li class="mobile-nav__item">
+					<a class="mobile-nav__link" href=""> Контакти</a>
+				</li>
+			</ul>
+		</nav>
+		<ul class="auth-mobile">
+			<li class="auth-mobile__item auth-mobile__item--phone">
+				<a class="auth-mobile__link" href="tel:+380961111111">
+
+					+38 096 111 11 11</a>
+			</li>
+			<li class="auth-mobile__item ">
+				<a class="auth-mobile__link" href="mailto:info@devstudio.com">
+					info@devstudio.com</a>
+			</li>
+		</ul>
+		<ul class="social-mobile">
+			<li class="social-mobile__item">
+				<a href="#" target="_blank" class="social-mobile__link">Instagram</a>
+			</li>
+			<li class="social-mobile__item">
+				<a href="#" target="_blank" class="social-mobile__link">Twitter</a>
+			</li>
+			<li class="social-mobile__item">
+				<a href="#" target="_blank" class="social-mobile__link">Facebook</a>
+			</li>
+			<li class="social-mobile__item">
+				<a href="#" target="_blank" class="social-mobile__link">LinkedIn</a>
+			</li>
+		</ul>
+	</div>
 	<footer class="footer">
 		<div class="footer__container">
 			<div class="footer__column">
@@ -452,6 +539,7 @@
 		</div>
 	</div>
 	<script src="./js/modal.js"></script>
+	<script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

@@ -1,24 +1,55 @@
 .portfolio__naviagtion {
 	display: flex;
-	justify-content: center;
-	gap: 8px;
-	margin-bottom: 50px;
+	flex-wrap: wrap;
+	column-gap: 8px;
+	row-gap: 15px;
+	margin-bottom: 40px;
+
+
+	@media (min-width:768px) {
+		justify-content: center;
+		margin-bottom: 30px;
+	}
+
+	@media (min-width:1201px) {
+		margin-bottom: 50px;
+	}
+
 }
 
 .naviagtion__button--active {
 	background-color: var(--color-accent);
 	color: #fff;
-
 }
 
 .grid {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 30px;
+
+	@media (min-width:768px) {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+	}
 }
 
+
 .grid__item {
-	flex-basis: calc((100% / 3) - 20px);
+
+
+	&:not(:last-child) {
+		@media (max-width:767px) {
+			margin-bottom: 30px;
+		}
+	}
+
+	@media (min-width:768px) {
+		flex-basis: calc((100% / 2) - 15px);
+	}
+
+	@media (min-width:1201px) {
+		flex-basis: calc((100% / 3) - 20px);
+	}
+
+
 }
 
 .grid__block {
@@ -38,14 +69,16 @@
 	font-size: 18px;
 	line-height: 1.55;
 	letter-spacing: 0.54px;
-	transform: translateY(100%);
+	transform: translateY(101%);
 	transition: transform var(--transition-duration) var(--transition-function);
 }
 
 
 .grid__link {
 	display: block;
+	height: 100%;
 	text-decoration: none;
+	border: 1px solid #EEE;
 	transition: box-shadow var(--transition-duration) var(--transition-function);
 
 	&:hover,
@@ -62,9 +95,6 @@
 
 .grid__texts {
 	padding: 20px 24px;
-	border-left: 1px solid #EEE;
-	border-right: 1px solid #EEE;
-	border-bottom: 1px solid #EEE;
 }
 
 .grid__name {
