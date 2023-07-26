@@ -50,15 +50,19 @@
 .modal {
 	position: relative;
 	max-width: 450px;
-	// max-width: 528px;
 	width: 100%;
-	/* min-height: 581px; */
 	border-radius: 4px;
 	background: #FFF;
 	box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 	transition: transform var(--transition-duration) var(--transition-function);
 	margin-right: 15px;
 	margin-left: 15px;
+
+	@media (min-width: 1201px) {
+		max-width: 528px;
+
+	}
+
 }
 
 .is-hidden .modal {
@@ -141,8 +145,14 @@
 		font-weight: 400;
 		line-height: var(--normal-line-height);
 
-		// font-size: 12px;
-		// letter-spacing: 0.12px;
+
+
+		@media (min-width: 1201px) {
+			font-size: 12px;
+			line-height: var(--normal-line-height);
+			letter-spacing: 0.12px;
+		}
+
 	}
 }
 
@@ -210,9 +220,13 @@
 	line-height: var(--normal-line-height);
 	letter-spacing: 0.36px;
 
-	// font-size: inherit;
-	// line-height: var(--normal-line-height);
-	// letter-spacing: 0.42px;
+
+	@media (min-width: 1201px) {
+		font-size: inherit;
+		line-height: var(--normal-line-height);
+		letter-spacing: 0.42px;
+	}
+
 }
 
 .checkbox__link {
