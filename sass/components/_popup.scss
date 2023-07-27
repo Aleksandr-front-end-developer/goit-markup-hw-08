@@ -78,6 +78,10 @@
 
 .form-modal {
 	padding: 40px;
+
+	@media (max-width: 350px) {
+		padding: 30px;
+	}
 }
 
 .form-modal__title {
@@ -89,6 +93,13 @@
 	line-height: 150%;
 	letter-spacing: 0.6px;
 	margin-bottom: 12px;
+
+	@media (max-width: 350px) {
+		font-size: 16px;
+		line-height: 150%;
+	}
+
+
 }
 
 .form-modal__field {
@@ -137,6 +148,10 @@
 	padding: 11px 15px;
 	resize: none;
 	min-height: 120px;
+
+	@media (max-width: 350px) {
+		min-height: 60px;
+	}
 
 	&::placeholder {
 		color: rgba(117, 117, 117, 0.50);
