@@ -71,6 +71,12 @@
 	letter-spacing: 0.54px;
 	transform: translateY(101%);
 	transition: transform var(--transition-duration) var(--transition-function);
+
+	@media (max-width: 380px) {
+		padding: 24px;
+		font-size: 14px;
+		line-height: 1.55;
+	}
 }
 
 
